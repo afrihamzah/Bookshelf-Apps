@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <h1>Bookshelf Apps</h1>
+    </header>
+    <main>
+      <section class="input-section">
+        <div>
+          <h2>Masukkan Buku Baru</h2>
+        </div>
+        <form id="form-list">
+          <div class="input">
+            <label for="title">Judul</label>
+            <input
+              id="title"
+              type="text"
+              name="title"
+              placeholder="Masukkan Judul"
+              required />
+          </div>
+          <div class="input">
+            <label for="author">Penulis</label>
+            <input
+              id="author"
+              type="text"
+              name="author"
+              placeholder="Masukkan Nama Penulis"
+              required />
+          </div>
+          <div class="input">
+            <label for="year">Tahun</label>
+            <input
+              id="year"
+              type="number"
+              name="year"
+              placeholder="Masukkan Tahun"
+              min="1500"
+              required />
+          </div>
+          <div class="button">
+            <button type="submit">Tambah Buku</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="search-section">
+        <form id="search-book">
+          <label>
+            <img src="asset/icons-search.svg" alt="" />
+          </label>
+          <input
+            id="textInput"
+            type="text"
+            name="search"
+            placeholder="Masukkan Judul Buku" />
+        </form>
+      </section>
+
+      <section class="container">
+        <h2>Sedang Dibaca</h2>
+        <div class="book-list" id="reading"></div>
+      </section>
+      <section class="container">
+        <h2>Selesai Dibaca</h2>
+        <div class="book-list" id="finished-reading"></div>
+      </section>
+    </main>
+  </body>
+  <script src="js/script.js"></script>
+</html>
