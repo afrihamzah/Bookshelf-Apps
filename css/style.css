@@ -86,6 +86,16 @@ main {
   border-radius: 20px;
 }
 
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.checkbox > .check-checkbox {
+  width: 14px;
+  cursor: pointer;
+}
 .search-section {
   display: flex;
   margin: 2em 2em 1em;
